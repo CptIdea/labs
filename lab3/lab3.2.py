@@ -18,4 +18,20 @@ print("======Вариант 1======")
 print("ФИО\t\t\tКатегория\tВозраст")
 for s in students:
     print("{0} {1} {2}\t{3}\t{4}".format(s.surname,s.name,s.patronym,s.category,s.age))
-    
+
+
+print("======Вариант 2======")
+print("ФИО\t\t\tВозраст\tКатегория")
+for s in students:
+    print("{0} {1} {2}\t{3}\t{4}".format(s.surname,s.name,s.patronym,s.age,s.category))
+
+print("======Вариант 3======")
+print("Ф\tИ\tО\t\t\tО студенте")
+for s in students:
+    print("{0}\t{1}\t{2}\t{3}, {4}".format(s.surname,s.name,s.patronym,s.category,s.age))
+
+
+print("======Вариант 4======")
+print("ФИО\t\t\tО студенте")
+for s in students:
+    print("{0} {1} {2}\t{3}, {4}".format(s.surname,s.name,s.patronym,s.category,s.age))

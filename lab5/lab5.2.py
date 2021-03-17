@@ -1,18 +1,29 @@
-class student(object):
-    def __init__(self, name, group,nom,age):
-        self.name = name
-    
-        self.group = group
-        self.nom = nom
-        self.age = age
-
 f = open("lab5/data/students.csv","r")
 
 students = []
 
 for raw in f.read().splitlines()[1:]:
     splitted =  raw.split(';')
-    students.append(student(splitted[1],splitted[3],splitted[0],splitted[2]))
+    students.append([splitted[0],splitted[1],splitted[2],splitted[3]])
 
+
+print("=====Вариант 1=====")
+students.sort(key = lambda s: s[1])
 for s in students:
-    print(s.group)
+    print(s)
+
+
+print("=====Вариант 2=====")
+students.sort(key = lambda s: s[2])
+for s in students:
+    print(s)
+
+print("=====Вариант 3=====")
+students.sort(key = lambda s: s[3])
+for s in students:
+    print(s)
+
+print("=====Вариант 4=====")
+for s in students:
+    if int(s[2])>22:
+        print(s)

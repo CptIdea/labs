@@ -13,13 +13,11 @@ if variant == 1:
     for v in students:
         v[2] = int(v[2])+1
 
-    print(students)
 
 elif variant == 2:  
     for v in students:
         v[2] = int(v[2])-1
 
-    print(students)
 
 elif variant == 3:  
     group = input("Группа?\n>")
@@ -27,7 +25,6 @@ elif variant == 3:
         if group == v[3]:
             v[2] = int(v[2])+1
 
-    print(students)
     
 elif variant == 4:  
     group = input("Группа?\n>")
@@ -35,4 +32,4 @@ elif variant == 4:
         if group == v[3]:
             v[2] = int(v[2])-1
 
-    print(students)
+print(*students,sep='\n')

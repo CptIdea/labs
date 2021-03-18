@@ -14,7 +14,7 @@ for s in students:
 
 
 print("=====Вариант 2=====")
-students.sort(key = lambda s: s[2])
+students.sort(key = lambda s: int(s[2]))
 for s in students:
     print(s)
 

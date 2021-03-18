@@ -5,7 +5,8 @@ matrix = list(
             input("Ввод матрицы.\nДелитель столбцов - ' '\nДелитель строк - ';'\n>").split(';')))
 
 sum = 0
-print(matrix)
+for s in matrix:
+    print(s)
 for s in matrix:
     for n in s:
         sum+=n

@@ -9,7 +9,7 @@ print("======Вариант 2======")
 ans = []
 for i in range(len(arr)):
     if i % 2 == 0:
-        ans += arr[i]
+        ans.append(arr[i])
 ans += ['raz',2]
 print(ans)
 
@@ -23,8 +23,9 @@ print(ans)
 
 print("======Вариант 4======")
 ans = []
-ans += ['raz',2,3,4,5]
+
 for i in range(len(arr)):
     if i % 2 == 0:
-        ans += arr[i]
+        ans.append(arr[i])
+ans += ['raz',2,3,4,5]
 print(ans)

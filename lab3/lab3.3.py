@@ -22,25 +22,25 @@ print("======Вариант 1======")
 print("{:10}\t{:10}\t{:10}\t{:15}\t\t{:15}".format("Фамилия","Имя","Отчество","Категория","Возраст"))
 for s in students:
     if s.surname == 'Петров':
-         print("{0:10}\t{1:10}\t{2:10}\t{3:15}\t\t{4:10}".format(s.surname,s.name,s.patronym,s.category,s.age))
+        print("{0:10}\t{1:10}\t{2:10}\t{3:15}\t\t{4:10}".format(s.surname,s.name,s.patronym,s.category,s.age))
 
 print("======Вариант 2======")
 print("{:10}\t{:10}\t{:10}\t{:15}\t\t{:15}".format("Фамилия","Имя","Отчество","Категория","Возраст"))
 for s in students:
     if s.age == '21 год':
-         print("{0:10}\t{1:10}\t{2:10}\t{3:15}\t\t{4:10}".format(s.surname,s.name,s.patronym,s.category,s.age))
+        print("{0:10}\t{1:10}\t{2:10}\t{3:15}\t\t{4:10}".format(s.surname,s.name,s.patronym,s.category,s.age))
 
 print("======Вариант 3======")
 print("{:10}\t{:10}\t{:10}\t{:15}\t\t{:15}".format("Фамилия","Имя","Отчество","Категория","Возраст"))
 for s in students:
     if s.age > '21 год':
-         print("{0:10}\t{1:10}\t{2:10}\t{3:15}\t\t{4:10}".format(s.surname,s.name,s.patronym,s.category,s.age))
+        print("{0:10}\t{1:10}\t{2:10}\t{3:15}\t\t{4:10}".format(s.surname,s.name,s.patronym,s.category,s.age))
 
 print("======Вариант 4======")
 print("{:10}\t{:10}\t{:10}\t{:15}\t\t{:15}".format("Фамилия","Имя","Отчество","Категория","Возраст"))
 for s in students:
     if s.surname[0]=='А' or s.surname[0]=='Б':
-         print("{0:10}\t{1:10}\t{2:10}\t{3:15}\t\t{4:10}".format(s.surname,s.name,s.patronym,s.category,s.age))
+        print("{0:10}\t{1:10}\t{2:10}\t{3:15}\t\t{4:10}".format(s.surname,s.name,s.patronym,s.category,s.age))
 
 
 

@@ -26,6 +26,7 @@ def main(*args):
 
 while True:
     lab,nom = npyscreen.wrapper_basic(main)
+    os.system('clear')
     print(f'===== Лаба {lab+1} Задание {nom+1} =====')
     allfunctions[lab][nom]()
-    input("Enter чтобы продолжить\n\n\n")
+    input("Enter чтобы продолжить")

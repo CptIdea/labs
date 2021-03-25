@@ -32,4 +32,4 @@ elif variant == 4:
         if group == v[3]:
             v[2] = int(v[2])-1
 
-print(*students,sep='\n')
+print(*students,sep='\n')os.system('clear')

@@ -1,8 +1,11 @@
-matrix = list(
-    map(
-        lambda x: list
-        (map(int,x.split())),
-            input("Ввод матрицы.\nДелитель столбцов - ' '\nДелитель строк - ';'\n>").split(';')))
+matrix = []
+
+while True:
+    cur = input('>')
+    if cur != '':
+        matrix.append(list(map(int,cur.split())))
+    else:
+        break    
 
 sum = 0
 for s in matrix:
